@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="王在予," />
+  <meta name="keywords" content="kotlin,java,springboot," />
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="我的儿子于2017年10月03号（阴历8月14日出生）">
-<meta name="keywords" content="王在予">
+<meta name="description" content="用kotlin 写javaWebIntelliJ中装了kotlin支持后，在写java类的时候就像顺手转换为kotlin，今天在哪到一个web项目的时候叶顺手转了下，坑来了123456789101112131415@RestController@RequestMapping(&quot;/api/test&quot;)public class TestCtrl extends BaseCtrl &amp;#123;   @A">
+<meta name="keywords" content="kotlin,java,springboot">
 <meta property="og:type" content="article">
-<meta property="og:title" content="孩子出生">
-<meta property="og:url" content="http://yoursite.com/2017/10/03/孩子出生/index.html">
+<meta property="og:title" content="kotlin for javaWeb踩坑">
+<meta property="og:url" content="http://yoursite.com/2018/05/06/kotlin-for-javaWeb踩坑/index.html">
 <meta property="og:site_name" content="王在予">
-<meta property="og:description" content="我的儿子于2017年10月03号（阴历8月14日出生）">
+<meta property="og:description" content="用kotlin 写javaWebIntelliJ中装了kotlin支持后，在写java类的时候就像顺手转换为kotlin，今天在哪到一个web项目的时候叶顺手转了下，坑来了123456789101112131415@RestController@RequestMapping(&quot;/api/test&quot;)public class TestCtrl extends BaseCtrl &amp;#123;   @A">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-05-02T09:37:09.000Z">
+<meta property="og:updated_time" content="2018-05-06T14:31:38.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="孩子出生">
-<meta name="twitter:description" content="我的儿子于2017年10月03号（阴历8月14日出生）">
+<meta name="twitter:title" content="kotlin for javaWeb踩坑">
+<meta name="twitter:description" content="用kotlin 写javaWebIntelliJ中装了kotlin支持后，在写java类的时候就像顺手转换为kotlin，今天在哪到一个web项目的时候叶顺手转了下，坑来了123456789101112131415@RestController@RequestMapping(&quot;/api/test&quot;)public class TestCtrl extends BaseCtrl &amp;#123;   @A">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/10/03/孩子出生/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/05/06/kotlin-for-javaWeb踩坑/"/>
 
 
 
 
 
-  <title>孩子出生 | 王在予</title>
+  <title>kotlin for javaWeb踩坑 | 王在予</title>
   
 
 
@@ -253,7 +253,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/03/孩子出生/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/06/kotlin-for-javaWeb踩坑/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="王笃恒">
@@ -270,7 +270,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">孩子出生</h1>
+          <h1 class="post-title" itemprop="name headline">kotlin for javaWeb踩坑</h1>
         
 
         <div class="post-meta">
@@ -282,8 +282,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-10-03T09:32:52+08:00">
-                2017-10-03
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-06T22:15:00+08:00">
+                2018-05-06
               </time>
             
 
@@ -320,7 +320,11 @@
       
 
       
-        <h2 id="我的儿子于2017年10月03号（阴历8月14日出生）"><a href="#我的儿子于2017年10月03号（阴历8月14日出生）" class="headerlink" title="我的儿子于2017年10月03号（阴历8月14日出生）"></a>我的儿子于2017年10月03号（阴历8月14日出生）</h2>
+        <h6 id="用kotlin-写javaWeb"><a href="#用kotlin-写javaWeb" class="headerlink" title="用kotlin 写javaWeb"></a>用kotlin 写javaWeb</h6><p>IntelliJ中装了kotlin支持后，在写java类的时候就像顺手转换为kotlin，今天在哪到一个web项目的时候叶顺手转了下，坑来了<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RestController</span></span><br><span class="line"><span class="meta">@RequestMapping</span>(<span class="string">"/api/test"</span>)</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestCtrl</span> <span class="keyword">extends</span> <span class="title">BaseCtrl</span> </span>&#123;</span><br><span class="line">   <span class="meta">@Autowired</span></span><br><span class="line">   IUsageService mService;</span><br><span class="line"></span><br><span class="line">   <span class="meta">@RequestMapping</span>(<span class="string">"/index1"</span>)</span><br><span class="line">   <span class="function"><span class="keyword">public</span> RestResponse <span class="title">indexFun</span><span class="params">(@RequestParam(required = <span class="keyword">false</span>)</span> String name)</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">   </span>&#123;</span><br><span class="line">       <span class="keyword">int</span> data = mService.checkData();</span><br><span class="line">       <span class="keyword">return</span> RestResponse.success(<span class="string">"hello-&gt;"</span> + data);</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>转为kotlin<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">@RestController</span><br><span class="line">@RequestMapping(&quot;/api/test&quot;)</span><br><span class="line">open class TestCtrlKt : BaseCtrl() &#123;</span><br><span class="line"></span><br><span class="line">   @Autowired</span><br><span class="line">   lateinit var mService: IUsageService</span><br><span class="line"></span><br><span class="line">   @RequestMapping(&quot;/index&quot;)</span><br><span class="line">   open fun indexFun(): RestResponse &#123;</span><br><span class="line">       val data = mService.checkData()</span><br><span class="line">       return RestResponse.success(&quot;hello-&gt;$data&quot;)</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>后，mService总是注入不进去，各种调试都上了，就是没用，硬了折腾了大半天，都没解决掉，晚上心不死，继续折腾，终于被我找我端倪，原来是mService没有加open,在kotlin中，一切没有open修饰的变量的get set方法都是final的<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Unable to proxy method [public final void com.chutian.mnt.api.ctrl.TestCtrlKt.setMService(com.chutian.mnt.api.service.IUsageService)] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.</span><br><span class="line">Unable to proxy method [public final com.chutian.mnt.api.service.IUsageService com.chutian.mnt.api.ctrl.TestCtrlKt.getMService()] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.</span><br></pre></td></tr></table></figure></p>
+<p>哈哈，info信息里面早上给出了答案，只怪自己粗心，没有细看info里面的日志，只关注error和warning了，浪费了大半天的时候</p>
+
       
     </div>
     
@@ -337,7 +341,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/王在予/" rel="tag"># 王在予</a>
+            <a href="/tags/kotlin-java-springboot/" rel="tag"># kotlin,java,springboot</a>
           
         </div>
       
@@ -350,8 +354,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/09/10/git-命令随笔/" rel="next" title="git 命令随笔">
-                <i class="fa fa-chevron-left"></i> git 命令随笔
+              <a href="/2018/05/02/android中人民币符号/" rel="next" title="android中人民币符号">
+                <i class="fa fa-chevron-left"></i> android中人民币符号
               </a>
             
           </div>
@@ -359,10 +363,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/05/02/Npm-VS-Yarn/" rel="prev" title="Npm VS Yarn">
-                Npm VS Yarn <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -511,7 +511,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#我的儿子于2017年10月03号（阴历8月14日出生）"><span class="nav-number">1.</span> <span class="nav-text">我的儿子于2017年10月03号（阴历8月14日出生）</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-6"><a class="nav-link" href="#用kotlin-写javaWeb"><span class="nav-number">1.</span> <span class="nav-text">用kotlin 写javaWeb</span></a></li></ol></div>
             
 
           </div>
