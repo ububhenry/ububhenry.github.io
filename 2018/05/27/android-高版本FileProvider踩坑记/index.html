@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="王在予," />
+  <meta name="keywords" content="android," />
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="我的儿子于2017年10月03号（阴历8月14日出生）">
-<meta name="keywords" content="王在予">
+<meta name="description" content="android高版本FileProvider踩坑记在android开发中，避免不了使用本地相机或者相册等本地文件功能，在android7.0之后不能直接访问不属于自己项目目录下的文件，需要通过android.support.v4.content.FileProvider来访问123456789&amp;lt;provider         android:name=&quot;android.support.v4">
+<meta name="keywords" content="android">
 <meta property="og:type" content="article">
-<meta property="og:title" content="孩子出生">
-<meta property="og:url" content="http://yoursite.com/2017/10/03/孩子出生/index.html">
+<meta property="og:title" content="android 高版本FileProvider踩坑记">
+<meta property="og:url" content="http://yoursite.com/2018/05/27/android-高版本FileProvider踩坑记/index.html">
 <meta property="og:site_name" content="王在予">
-<meta property="og:description" content="我的儿子于2017年10月03号（阴历8月14日出生）">
+<meta property="og:description" content="android高版本FileProvider踩坑记在android开发中，避免不了使用本地相机或者相册等本地文件功能，在android7.0之后不能直接访问不属于自己项目目录下的文件，需要通过android.support.v4.content.FileProvider来访问123456789&amp;lt;provider         android:name=&quot;android.support.v4">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-05-08T03:20:28.000Z">
+<meta property="og:updated_time" content="2018-05-27T14:00:54.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="孩子出生">
-<meta name="twitter:description" content="我的儿子于2017年10月03号（阴历8月14日出生）">
+<meta name="twitter:title" content="android 高版本FileProvider踩坑记">
+<meta name="twitter:description" content="android高版本FileProvider踩坑记在android开发中，避免不了使用本地相机或者相册等本地文件功能，在android7.0之后不能直接访问不属于自己项目目录下的文件，需要通过android.support.v4.content.FileProvider来访问123456789&amp;lt;provider         android:name=&quot;android.support.v4">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/10/03/孩子出生/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/05/27/android-高版本FileProvider踩坑记/"/>
 
 
 
 
 
-  <title>孩子出生 | 王在予</title>
+  <title>android 高版本FileProvider踩坑记 | 王在予</title>
   
 
 
@@ -253,7 +253,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/03/孩子出生/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/27/android-高版本FileProvider踩坑记/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="王笃恒">
@@ -270,7 +270,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">孩子出生</h1>
+          <h1 class="post-title" itemprop="name headline">android 高版本FileProvider踩坑记</h1>
         
 
         <div class="post-meta">
@@ -282,8 +282,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-10-03T09:32:52+08:00">
-                2017-10-03
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-27T21:52:56+08:00">
+                2018-05-27
               </time>
             
 
@@ -320,7 +320,9 @@
       
 
       
-        <h2 id="我的儿子于2017年10月03号（阴历8月14日出生）"><a href="#我的儿子于2017年10月03号（阴历8月14日出生）" class="headerlink" title="我的儿子于2017年10月03号（阴历8月14日出生）"></a>我的儿子于2017年10月03号（阴历8月14日出生）</h2>
+        <h5 id="android高版本FileProvider踩坑记"><a href="#android高版本FileProvider踩坑记" class="headerlink" title="android高版本FileProvider踩坑记"></a>android高版本FileProvider踩坑记</h5><p>在android开发中，避免不了使用本地相机或者相册等本地文件功能，在android7.0之后不能直接访问不属于自己项目目录下的文件，需要通过android.support.v4.content.FileProvider来访问<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">provider</span></span></span><br><span class="line"><span class="tag">         <span class="attr">android:name</span>=<span class="string">"android.support.v4.content.FileProvider"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">android:authorities</span>=<span class="string">"$&#123;applicationId&#125;.fileProvider"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">android:exported</span>=<span class="string">"false"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">android:grantUriPermissions</span>=<span class="string">"true"</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">meta-data</span></span></span><br><span class="line"><span class="tag">             <span class="attr">android:name</span>=<span class="string">"android.support.FILE_PROVIDER_PATHS"</span></span></span><br><span class="line"><span class="tag">             <span class="attr">android:resource</span>=<span class="string">"@xml/file_paths"</span> /&gt;</span></span><br><span class="line">     <span class="tag">&lt;/<span class="name">provider</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>有一次在项目中，不知道从哪里拷贝过来的mainfest.xml文件，居然把上面authorities的值写为：fileProvider大写(驼峰命名)，项目上线之后死活不知道为什么接入的广告sdk一直有问题，找了好久，经过一个字一个字的对比，终于被我找到，authorities的值应该为${applicationId}.fileprovider,不知道哪位前辈留得坑，让我踩的好深好深</p>
+
       
     </div>
     
@@ -337,7 +339,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/王在予/" rel="tag"># 王在予</a>
+            <a href="/tags/android/" rel="tag"># android</a>
           
         </div>
       
@@ -350,8 +352,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/09/10/git-命令随笔/" rel="next" title="git 命令随笔">
-                <i class="fa fa-chevron-left"></i> git 命令随笔
+              <a href="/2018/05/08/Mac下使用vim-查找功能/" rel="next" title="Mac下使用vim 查找功能">
+                <i class="fa fa-chevron-left"></i> Mac下使用vim 查找功能
               </a>
             
           </div>
@@ -359,10 +361,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/05/02/Npm-VS-Yarn/" rel="prev" title="Npm VS Yarn">
-                Npm VS Yarn <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -511,7 +509,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#我的儿子于2017年10月03号（阴历8月14日出生）"><span class="nav-number">1.</span> <span class="nav-text">我的儿子于2017年10月03号（阴历8月14日出生）</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#android高版本FileProvider踩坑记"><span class="nav-number">1.</span> <span class="nav-text">android高版本FileProvider踩坑记</span></a></li></ol></div>
             
 
           </div>

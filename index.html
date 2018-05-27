@@ -253,6 +253,127 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/27/android-高版本FileProvider踩坑记/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="王笃恒">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="王在予">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/27/android-高版本FileProvider踩坑记/" itemprop="url">android 高版本FileProvider踩坑记</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-27T21:52:56+08:00">
+                2018-05-27
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h5 id="android高版本FileProvider踩坑记"><a href="#android高版本FileProvider踩坑记" class="headerlink" title="android高版本FileProvider踩坑记"></a>android高版本FileProvider踩坑记</h5><p>在android开发中，避免不了使用本地相机或者相册等本地文件功能，在android7.0之后不能直接访问不属于自己项目目录下的文件，需要通过android.support.v4.content.FileProvider来访问<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">provider</span></span></span><br><span class="line"><span class="tag">         <span class="attr">android:name</span>=<span class="string">"android.support.v4.content.FileProvider"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">android:authorities</span>=<span class="string">"$&#123;applicationId&#125;.fileProvider"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">android:exported</span>=<span class="string">"false"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">android:grantUriPermissions</span>=<span class="string">"true"</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">meta-data</span></span></span><br><span class="line"><span class="tag">             <span class="attr">android:name</span>=<span class="string">"android.support.FILE_PROVIDER_PATHS"</span></span></span><br><span class="line"><span class="tag">             <span class="attr">android:resource</span>=<span class="string">"@xml/file_paths"</span> /&gt;</span></span><br><span class="line">     <span class="tag">&lt;/<span class="name">provider</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>有一次在项目中，不知道从哪里拷贝过来的mainfest.xml文件，居然把上面authorities的值写为：fileProvider大写(驼峰命名)，项目上线之后死活不知道为什么接入的广告sdk一直有问题，找了好久，经过一个字一个字的对比，终于被我找到，authorities的值应该为${applicationId}.fileprovider,不知道哪位前辈留得坑，让我踩的好深好深</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/08/Mac下使用vim-查找功能/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1177,7 +1298,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -1190,7 +1311,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
